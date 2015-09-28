@@ -1,6 +1,6 @@
-var React = require('react');
+const React = require('react');
 
-var App = React.createClass({
+const App = React.createClass({
   render() {
     return (
       <div className="app">
