@@ -1,6 +1,7 @@
 const React = require('react');
+const ReactDOM = require('react-dom');
 
-const App = React.createClass({
+class App extends React.Component{
   render() {
     return (
       <div className="app">
@@ -8,6 +9,6 @@ const App = React.createClass({
       </div>
     );
   }
-});
+};
 
-React.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
