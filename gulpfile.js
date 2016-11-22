@@ -13,7 +13,7 @@ gulp.task('build-js', function() {
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader?stage=0&optional[]=runtime&loose=true&nonStandard=true'
+            loader: 'babel-loader'
           },
         ],
       },
@@ -53,7 +53,7 @@ gulp.task('jasmine', function() {
           {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader?stage=0&optional[]=runtime&loose=true'
+            loader: 'babel-loader'
           }
         ]
       },
