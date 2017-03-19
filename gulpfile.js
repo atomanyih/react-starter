@@ -10,6 +10,7 @@ gulp.task('build-js', function() {
   return gulp.src('js/app.js')
     .pipe(plumber())
     .pipe(webpack({
+      devtool: 'eval-source-map',
       module: {
         loaders: [
           {
