@@ -4,9 +4,11 @@ var webpack = require('webpack-stream');
 var connect = require('gulp-connect');
 var plugins = require('gulp-load-plugins')();
 var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
 
 gulp.task('build-js', function() {
   return gulp.src('js/app.js')
+    .pipe(plumber())
     .pipe(webpack({
       module: {
         loaders: [
